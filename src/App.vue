@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view />
+    <br />
+    <br />
+    <footer class="usa-footer usa-footer--slim">
+      <div class="grid-container usa-footer__return-to-top">
+        <a href="#">Return to top</a>
+      </div>
+
+      <div class="usa-footer__secondary-section">
+        <div class="grid-container">
+          <div class="usa-footer__logo grid-row grid-gap-2">
+            <div class="grid-col-auto">
+              <img class="usa-footer__logo-img" src="/assets/img/logo-img.png" alt />
+            </div>
+            <div class="grid-col-auto">
+              <h5 class>&copy; Thumbs Up Solutions</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-};
+  
+}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "~uswds/dist/css/uswds.css";
+.subheader {
+  margin-left: 25px;
 }
 </style>
+
